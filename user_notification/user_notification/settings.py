@@ -116,3 +116,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Email Configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'gampalajyothiprakash@gmail.com'
+# Use Gmail App Password instead of regular password
+EMAIL_HOST_PASSWORD = 'Jyothi@81420'  # Replace with actual app password
+
+# SMS Configuration (Twilio)
+TWILIO_ACCOUNT_SID = 'your-twilio-account-sid'  # Replace with your Twilio Account SID
+TWILIO_AUTH_TOKEN = 'your-twilio-auth-token'    # Replace with your Twilio Auth Token
+TWILIO_PHONE_NUMBER = 'your-twilio-phone-number'  # Replace with your Twilio phone number
